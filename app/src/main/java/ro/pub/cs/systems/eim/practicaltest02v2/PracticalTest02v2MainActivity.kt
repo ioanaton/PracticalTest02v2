@@ -10,7 +10,9 @@ class PracticalTest02v2MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_practical_test02v2_main)
+        setContentView(R.layout.activity_practical_test02v2_main) // Asigură-te că folosești numele corect al layout-ului
+
+        // Menține padding-ul pentru sistem bar (opțional pentru aspect)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

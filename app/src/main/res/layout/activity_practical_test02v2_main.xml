@@ -7,13 +7,39 @@
     android:layout_height="match_parent"
     tools:context=".PracticalTest02v2MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/wordInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter a word"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/searchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Search"
+        app:layout_constraintTop_toBottomOf="@id/wordInput"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/definitionOutput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Definition will appear here"
+        android:padding="8dp"
+        android:background="#E0E0E0"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/searchButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
