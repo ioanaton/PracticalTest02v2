@@ -33,7 +33,7 @@ class PracticalTest02v2MainActivity : AppCompatActivity() {
             ContextCompat.RECEIVER_NOT_EXPORTED
         )
 
-        // Când se apasă butonul de căutare
+
         findViewById<Button>(R.id.searchButton).setOnClickListener {
             val word = findViewById<EditText>(R.id.wordInput).text.toString()
             if (word.isNotBlank()) {
@@ -41,7 +41,6 @@ class PracticalTest02v2MainActivity : AppCompatActivity() {
             }
         }
     }
-
 
 
     private fun fetchDefinition(word: String) {
