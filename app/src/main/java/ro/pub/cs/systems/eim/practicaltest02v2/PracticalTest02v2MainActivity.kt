@@ -42,6 +42,8 @@ class PracticalTest02v2MainActivity : AppCompatActivity() {
         }
     }
 
+
+
     private fun fetchDefinition(word: String) {
         val url = "https://api.dictionaryapi.dev/api/v2/entries/en/$word"
         val client = OkHttpClient()
